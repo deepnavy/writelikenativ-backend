@@ -18,8 +18,8 @@ load_dotenv()
 app = Flask(__name__)
 allowed_origins = ["http://localhost:5173", "https://writelikenative.com"]
 cors = CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
-# CORS(app)
 
+# CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Load the OpenAI API key from an environment variable
